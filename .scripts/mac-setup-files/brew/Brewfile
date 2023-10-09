@@ -1,0 +1,88 @@
+cask_args appdir: "/Applications"
+
+# Tap Homebrew
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "civo/tools"
+tap "anchore/grype"
+tap "robscott/tap"
+tap "lotyp/homebrew-formulae"
+
+cask "visual-studio-code"
+cask "wireshark"
+cask "spotify"
+cask "raycast"
+cask "docker"
+cask "rectangle"
+cask "google-cloud-sdk"
+cask "slack"
+cask "google-chrome"
+cask "datagrip"
+cask "keka"
+cask "obsidian"
+cask "whatsapp"
+cask "zoom"
+cask "lens"
+
+# Add fonts
+tap "bramstein/webfonttools"
+brew "sfnt2woff"
+brew "sfnt2woff-zopfli"
+brew "woff2"
+
+# Update GNU core utils
+brew "coreutils"
+brew "moreutils"
+brew "findutils"
+
+# Update MacOS tools
+brew "vim"
+brew "grep"
+brew "openssh"
+brew "screen"
+
+# System
+brew "mas"
+brew "fzf"
+brew "gh"
+brew "lotyp/formulae/dockutil"
+
+# Ops
+brew "act"
+brew "awscli"
+brew "ansible"
+brew "civo"
+brew "grype"
+brew "warrensbox/tap/tfswitch"
+brew "robscott/tap/kube-capacity"
+brew "mr"
+brew "mtr"
+brew "stern"
+brew "kubie"
+brew "linkerd"
+brew "helm"
+brew "step"
+brew "watch"
+brew "zsh-completions"
+brew "zsh-syntax-highlighting"
+
+# Docker
+brew "docker-compose"
+brew "docker-completion"
+
+# JSON
+brew "jq"
+
+# Dev
+brew "python"
+brew "pyenv"
+brew "go"
+brew "bfg"
+
+# Apps
+brew "bitwarden-cli"
+mas "Bitwarden", id: 1352778147

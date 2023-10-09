@@ -1,0 +1,12 @@
+# <COMPNAY_NAME>
+
+## GROUP 1
+[terraform]
+checkout = git clone 'git@github.com:<GITHUB_REPO_OWNER>/terraform' 'terraform'
+
+## GROUP 2
+[app1]
+checkout = git clone 'git@github.com:<GITHUB_REPO_OWNER>/app1' 'app1'
+
+[app2]
+checkout = git clone 'git@github.com:<GITHUB_REPO_OWNER>/app2' 'app2'

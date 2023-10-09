@@ -1,0 +1,8 @@
+#!/bin/zsh
+
+export ZSH="${HOME}/.oh-my-zsh"
+source $ZSH/oh-my-zsh.sh
+
+dotf add .zsh_history
+dotfc "Update zsh_history - cron"
+dotfp

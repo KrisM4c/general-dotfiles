@@ -1,0 +1,15 @@
+[core]
+	editor = vim
+[init]
+	defaultBranch = main
+[fetch]
+	prune = true
+[user]
+	name = "<FULL_NAME>"
+	email = "<COMPANY_EMAIL>"
+[includeIf "gitdir:~/.dotfiles"]
+        path = ~/.gitconfig-personal
+[includeIf "gitdir:~/src/<COMPANY_NAME>/"]
+	path = ~/.gitconfig-<COMPANY_NAME>
+[includeIf "gitdir:~/src/personal/"]
+        path = ~/.gitconfig-personal

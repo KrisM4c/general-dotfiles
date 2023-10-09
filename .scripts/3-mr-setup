@@ -1,0 +1,13 @@
+#!/bin/zsh
+
+dirs=(<COMPANY_NAME> personal)
+mr=($HOME/.scripts/mac-setup-files/mr)
+
+for dir in "${dirs[@]}"
+do
+  echo "Creating directory $dir..."
+  test -d "${HOME}/src/$dir" || mkdir -p "${HOME}/src/$dir"
+  echo "Copying mrconfig to $dir"
+  cp $mr/.$dir-mrconfig ${HOME}/src/$dir/.mrconfig
+  echo "Completed!"
+done

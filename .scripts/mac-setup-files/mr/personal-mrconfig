@@ -1,0 +1,6 @@
+# Personal
+
+## Global
+### Scripts
+[scripts]
+checkout = git clone 'git@personal.github.com:<GITHUB_REPO_OWNER>/scripts.git' 'scripts'

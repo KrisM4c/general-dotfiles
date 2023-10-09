@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+githubUsername=<GITHUB_USERNAME>
+
+# ## Install oh-my-zsh
+ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+sleep 5
+
+# Syncs the dotfiles to the local machine
+git clone --bare https://${githubUsername}:$TOKEN@github.com/${githubUsername}/dotfiles $HOME/.dotfiles
+
+function dotf {
+   /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
+}
+mkdir -p $HOME/.dotfiles-backup
+dotf checkout
+if [ $? = 0 ]; then
+  echo "Checked out config.";
+  else
+    echo "Backing up pre-existing dot files.";
+    dotf checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .dotfiles-backup/{}
+fi;
+dotf checkout
+dotf config status.showUntrackedFiles no
