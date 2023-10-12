@@ -4,7 +4,11 @@ This repository contains everything to bootstrap my Macbook Pro (16 inch, 2021).
 
 In addition to the files stored in this repository, the following instructions are needed to fully setup my Macbook Pro.
 
-Please be aware these scripts/MacOS settings/applications are all tailored for KrisM4c, so please check all options before applying to your own machine! :D I accept no responsibility for any issues that occur due to negligence of checking over the options being set! This repo can be used as a guideline for creating your own Dotfiles!
+> ⚠️⚠️⚠️
+>
+> Please be aware these scripts/MacOS settings/applications are all tailored for KrisM4c, so please check all options before applying to your own machine! :D I accept no responsibility for any issues that occur due to negligence of checking over the options being set! This repo can be used as a guideline for creating your own Dotfiles!
+>
+> ⚠️⚠️⚠️
 
 ## Preparations
 
