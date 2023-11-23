@@ -14,20 +14,20 @@ In addition to the files stored in this repository, the following instructions a
 
 ### VARIABLES TO CHANGE
 
-As this repository has been sanitised, i have replaced items that will need replacing with you own information! Please see below for all of the variables to update throughout this repository to fit to your needs:
+As this repository has been sanitised, i have replaced items that will need replacing with you own information! You can use Find in Folder across the whole directory (INCLUDING THE <>), and replace with your info. Please see below for all of the variables to update throughout this repository to fit to your needs:
 
 ```
-<FULL_NAME>
-<COMPANY_EMAIL>
-<COMPANY_NAME>
-<GITHUB_USERNAME>
-<GITHUB_EMAIL>
-<MAC_USERNAME>
-<GITHUB_REPO_OWNER>
-<ACCESS_KEY_ID>
-<SECRET_ACCESS_KEY>
-<NONPROD_GCP_PROJ>
-<PROD_GCP_PROJ>
+<FULL_NAME> (example: Kris M4c)
+<COMPANY_EMAIL> (example: kris.m4c@example.com)
+<COMPANY_NAME>  (example: example-company)
+<GITHUB_USERNAME> (example: KrisM4c)
+<GITHUB_EMAIL> (example: krism4c@gmail.com)
+<MAC_USERNAME> (example: krism4c)
+<GITHUB_REPO_OWNER> (example: krism4c)
+<ACCESS_KEY_ID> (example: AAAAAAA1234) - Used in `.aws/credentials`
+<SECRET_ACCESS_KEY> (example: 123456789ABCDEFG) - Used in `.aws/credentials`
+<NONPROD_GCP_PROJ> (example: gcp-nonprod-project) - Used in `.zshrc`
+<PROD_GCP_PROJ> (example: gcp-prod-project) - Used in `.zshrc`
 ```
 
 ### iterm2
