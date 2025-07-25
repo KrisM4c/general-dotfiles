@@ -1,0 +1,23 @@
+name: Testing approval workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: echo message
+        run: echo "This is a test workflow to check approval process."
+
+  approval:
+    runs-on: ubuntu-latest
+    needs: test
+    environment: prod-test
+    steps:
+      - run: echo "This job was approved."
